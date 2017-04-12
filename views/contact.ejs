@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Contact US
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+  <h1>Your comments are our treasure </h1>
+  <form action="http://localhost:3000/contact" method="POST">
+    <ul style="list-style-type: none">
+      <li>
+        <label for="fullname">Full Name</label><br>
+        <input type="text" name="fullname" id="fullname">
+      </li>
+      <li>
+        <label for="type"> Suggestion Type</label><br>
+        <select name="type">
+              <option>---Type---</option>
+              <option>suggestion</option>
+              <option>complaint</option>
+          </select>
+      </li>
+      <li>
+        <label for="message">Message</label><br>
+        <textarea name="message" placeholder="Message Here"></textarea>
+      </li>
+      <li>
+        <input type="submit" value="Submit Comment">
+      </li>
+    </ul>
+  </form>
+</body>
+</html>
